@@ -382,7 +382,7 @@
             </TablixRowHierarchy>
             <DataSetName>equipTBL_3b</DataSetName>
             <Top>5.96069cm</Top>
-            <Left>0.31432cm</Left>
+            <Left>1.13453cm</Left>
             <Height>1.2cm</Height>
             <Width>7.5cm</Width>
             <Style>
@@ -638,7 +638,7 @@
             </TablixRowHierarchy>
             <DataSetName>maintTBL_3a</DataSetName>
             <Top>4.2409cm</Top>
-            <Left>0.31432cm</Left>
+            <Left>1.13453cm</Left>
             <Height>1.2cm</Height>
             <Width>7.5cm</Width>
             <ZIndex>1</ZIndex>
@@ -832,7 +832,7 @@
             </TablixRowHierarchy>
             <DataSetName>empTBLfault_3c</DataSetName>
             <Top>4.2409cm</Top>
-            <Left>9.73349cm</Left>
+            <Left>10.5537cm</Left>
             <Height>1.2cm</Height>
             <Width>7.5cm</Width>
             <ZIndex>2</ZIndex>
@@ -1026,7 +1026,7 @@
             </TablixRowHierarchy>
             <DataSetName>empTBLmaint_3d</DataSetName>
             <Top>5.96069cm</Top>
-            <Left>9.73349cm</Left>
+            <Left>10.5537cm</Left>
             <Height>1.2cm</Height>
             <Width>7.5cm</Width>
             <ZIndex>3</ZIndex>
@@ -1042,7 +1042,7 @@
             <Value>report_image1</Value>
             <Sizing>FitProportional</Sizing>
             <Top>0.47625cm</Top>
-            <Left>5.93814cm</Left>
+            <Left>6.62606cm</Left>
             <Height>2.96333cm</Height>
             <Width>5.945cm</Width>
             <ZIndex>4</ZIndex>
@@ -1098,7 +1098,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox39</rd:DefaultName>
               <Height>2.50472cm</Height>
-              <Width>17.94787cm</Width>
+              <Width>19.58891cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
