@@ -66,6 +66,10 @@
       <Name>Maintenance.rdl</Name>
       <FullPath>Maintenance.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Fault.rdl</Name>
+      <FullPath>Fault.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
