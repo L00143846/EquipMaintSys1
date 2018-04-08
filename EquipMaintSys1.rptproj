@@ -9,20 +9,48 @@
   </DataSources>
   <DataSets>
     <ProjectItem>
+      <Name>Comp1.rsd</Name>
+      <FullPath>Comp1.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Equip1.rsd</Name>
       <FullPath>Equip1.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Comp1.rsd</Name>
-      <FullPath>Comp1.rsd</FullPath>
+      <Name>Syslog2.rsd</Name>
+      <FullPath>Syslog2.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Users2.rsd</Name>
       <FullPath>Users2.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Syslog2.rsd</Name>
-      <FullPath>Syslog2.rsd</FullPath>
+      <Name>3a1_maintDDL.rsd</Name>
+      <FullPath>3a1_maintDDL.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>3b1_equipDDL.rsd</Name>
+      <FullPath>3b1_equipDDL.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>3cd1_empDDL.rsd</Name>
+      <FullPath>3cd1_empDDL.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>3a_maintTBL.rsd</Name>
+      <FullPath>3a_maintTBL.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>3b_equipTBL.rsd</Name>
+      <FullPath>3b_equipTBL.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>3c_empTBLfault.rsd</Name>
+      <FullPath>3c_empTBLfault.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>3d_empTBLmaint.rsd</Name>
+      <FullPath>3d_empTBLmaint.rsd</FullPath>
     </ProjectItem>
   </DataSets>
   <Reports>
@@ -33,6 +61,10 @@
     <ProjectItem>
       <Name>Syslog.rdl</Name>
       <FullPath>Syslog.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Maintenance.rdl</Name>
+      <FullPath>Maintenance.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>EquipMaintSys1</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@Equ1">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT        Con.Company_Name AS 'Maintenance Company', Con.Contact_Name AS 'Contact', Con.Phone_Number AS 'Phone'
+FROM            Contractor AS Con INNER JOIN
+                         Equipment AS Eq ON Con.Company_Name = Eq.Contractor
+WHERE        (Eq.Name = @Equ1)</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Maintenance_Company">
+        <DataField>Maintenance Company</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Contact">
+        <DataField>Contact</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Phone">
+        <DataField>Phone</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

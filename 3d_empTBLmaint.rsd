@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>EquipMaintSys1</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@emp">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>select M.MaintID AS'Maint ID', M.Description AS 'Detail'
+from EquipMaintSys1.dbo.Maintenance_Schedule M
+inner join EquipMaintSys1.dbo.Employee E ON M.employee=E.UserID
+where M.employee=@emp;</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Maint_ID">
+        <DataField>Maint ID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Detail">
+        <DataField>Detail</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
