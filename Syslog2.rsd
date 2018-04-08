@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>EquipMaintSys1</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@word1">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>select left(Syslog.Timestamp, 25) AS 'Date',EquipMaintSys1.dbo.Employee.Username AS 'Username', CONCAT(Syslog.Edited_Table,', ', Syslog.Edited_PK) AS 'Details', Syslog.LogID AS 'User Session'
+	from EquipMaintSys1.dbo.Syslog
+	inner join EquipMaintSys1.dbo.Employee ON EquipMaintSys1.dbo.Syslog.UserID=EquipMaintSys1.dbo.Employee.UserID
+		WHERE Syslog.Timestamp=@word1 OR Employee.Username=@word1 OR Syslog.Edited_Table=@word1 OR Syslog.Edited_PK=@word1 OR Syslog.LogID=@word1;</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Date">
+        <DataField>Date</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Username">
+        <DataField>Username</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Details">
+        <DataField>Details</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="User_Session">
+        <DataField>User Session</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

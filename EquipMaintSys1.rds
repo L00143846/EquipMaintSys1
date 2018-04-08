@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="EquipMaintSys1">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=ws12sql9;Initial Catalog=EquipMaintSys1</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>b4cc890b-5a97-4631-8c77-17570d8e52d9</DataSourceID>
+</RptDataSource>
