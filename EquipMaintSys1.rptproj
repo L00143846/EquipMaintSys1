@@ -45,16 +45,16 @@
       <FullPath>Equip1.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Faults.rsd</Name>
+      <FullPath>Faults.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Syslog2.rsd</Name>
       <FullPath>Syslog2.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Users2.rsd</Name>
       <FullPath>Users2.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Faults.rsd</Name>
-      <FullPath>Faults.rsd</FullPath>
     </ProjectItem>
   </DataSets>
   <Reports>
@@ -63,16 +63,16 @@
       <FullPath>Components.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Faults.rdl</Name>
+      <FullPath>Faults.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Maintenance.rdl</Name>
       <FullPath>Maintenance.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Syslog.rdl</Name>
       <FullPath>Syslog.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Faults.rdl</Name>
-      <FullPath>Faults.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -86,7 +86,9 @@
         <TargetFolder>EquipMaintSys1</TargetFolder>
         <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <OverwriteDataSources>true</OverwriteDataSources>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <OverwriteDatasets>true</OverwriteDatasets>
         <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
       </Options>
     </Configuration>
