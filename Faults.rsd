@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>EquipMaintSys1</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@Equ1">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>select F.IncindentID AS 'Fault ID', DATEDIFF(hour, F.Start_Time, F.End_Time) AS 'Downtime',
+((CAST((DATEDIFF(hour, F.Start_Time, F.End_Time)) AS decimal))*(CAST(E.Downtime_cost_hr AS decimal))) AS 'Cost (€)',
+F.Description
+from EquipMaintSys1.dbo.Fault_Log AS F
+INNER JOIN equipmaintsys1.dbo.Equipment AS E ON F.Equipment = E.SerialID
+WHERE (E.Name = @Equ1) </CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Fault_ID">
+        <DataField>Fault ID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Downtime">
+        <DataField>Downtime</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Cost____">
+        <DataField>Cost (€)</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Description">
+        <DataField>Description</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

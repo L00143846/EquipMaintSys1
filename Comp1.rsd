@@ -11,10 +11,9 @@
           <rd:DbType>Object</rd:DbType>
         </DataSetParameter>
       </DataSetParameters>
-      <CommandText>SELECT        Component.SerialID AS 'Component Number', Component.Name, Component.Purchase_Cost AS Cost, Component.Purchase_Date AS 'Replacement Date (if any)'
-FROM            Component INNER JOIN
-                         Equipment ON Component.Equipment = Equipment.SerialID
-WHERE        (Equipment.Name = @Equ1)</CommandText>
+      <CommandText>SELECT Component.SerialID AS 'Component Number', Component.Name, Component.Purchase_Cost AS Cost, Component.Purchase_Date AS 'Replacement Date (if any)'
+FROM equipmaintsys1.dbo.Component INNER JOIN equipmaintsys1.dbo.Equipment ON Component.Equipment = Equipment.SerialID
+WHERE (Equipment.Name = @Equ1)</CommandText>
     </Query>
     <Fields>
       <Field Name="Component_Number">

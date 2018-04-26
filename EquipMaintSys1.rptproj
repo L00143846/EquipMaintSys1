@@ -9,6 +9,34 @@
   </DataSources>
   <DataSets>
     <ProjectItem>
+      <Name>3a_maintTBL.rsd</Name>
+      <FullPath>3a_maintTBL.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>3a1_maintDDL.rsd</Name>
+      <FullPath>3a1_maintDDL.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>3b_equipTBL.rsd</Name>
+      <FullPath>3b_equipTBL.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>3b1_equipDDL.rsd</Name>
+      <FullPath>3b1_equipDDL.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>3c_empTBLfault.rsd</Name>
+      <FullPath>3c_empTBLfault.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>3cd1_empDDL.rsd</Name>
+      <FullPath>3cd1_empDDL.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>3d_empTBLmaint.rsd</Name>
+      <FullPath>3d_empTBLmaint.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Comp1.rsd</Name>
       <FullPath>Comp1.rsd</FullPath>
     </ProjectItem>
@@ -25,32 +53,8 @@
       <FullPath>Users2.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>3a1_maintDDL.rsd</Name>
-      <FullPath>3a1_maintDDL.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>3b1_equipDDL.rsd</Name>
-      <FullPath>3b1_equipDDL.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>3cd1_empDDL.rsd</Name>
-      <FullPath>3cd1_empDDL.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>3a_maintTBL.rsd</Name>
-      <FullPath>3a_maintTBL.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>3b_equipTBL.rsd</Name>
-      <FullPath>3b_equipTBL.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>3c_empTBLfault.rsd</Name>
-      <FullPath>3c_empTBLfault.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>3d_empTBLmaint.rsd</Name>
-      <FullPath>3d_empTBLmaint.rsd</FullPath>
+      <Name>Faults.rsd</Name>
+      <FullPath>Faults.rsd</FullPath>
     </ProjectItem>
   </DataSets>
   <Reports>
@@ -59,16 +63,16 @@
       <FullPath>Components.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Syslog.rdl</Name>
-      <FullPath>Syslog.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Maintenance.rdl</Name>
       <FullPath>Maintenance.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Fault.rdl</Name>
-      <FullPath>Fault.rdl</FullPath>
+      <Name>Syslog.rdl</Name>
+      <FullPath>Syslog.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Faults.rdl</Name>
+      <FullPath>Faults.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -78,7 +82,7 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2016</TargetServerVersion>
-        <TargetServerURL>http://localhost/reportserver</TargetServerURL>
+        <TargetServerURL>http://ws12sql9/ReportServer</TargetServerURL>
         <TargetFolder>EquipMaintSys1</TargetFolder>
         <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>

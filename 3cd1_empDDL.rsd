@@ -3,9 +3,9 @@
   <DataSet Name="DataSet1">
     <Query>
       <DataSourceReference>EquipMaintSys1</DataSourceReference>
-      <CommandText>SELECT        UserID AS 'Technician'
-FROM            Employee AS Em
-WHERE        (Department = 'Technician')</CommandText>
+      <CommandText>SELECT        Em.UserID AS 'Technician'
+FROM           EquipMaintSys1.dbo.Employee AS Em
+WHERE        (Em.Department = 'Technician')</CommandText>
     </Query>
     <Fields>
       <Field Name="Technician">
